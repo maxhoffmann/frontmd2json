@@ -25,3 +25,28 @@ var frontmd2json = require('frontmd2json')
 
 var json = frontmd2json(['**/*.markdown', '**/*.md'])
 ```
+
+Example
+-------
+
+__Input__
+```markdown
+---
+date: 2014-11-02
+---
+# Headline
+
+Paragraph
+```
+
+__Output__
+```json
+{
+  meta: {
+    date: Date('2014-11-02'),
+    _markdown: "# Headline\nParagraph",
+    _path: "path/to/markdown.md"
+  },
+  html: "<h1>Headline</h1><p>Paragraph</p>"
+}
+```
