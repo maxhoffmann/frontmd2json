@@ -11,13 +11,15 @@ var remarkable = new Remarkable({
 module.exports = function markdowntojson(patterns) {
   var paths = globby.sync(patterns)
   var articles = paths.map(function(filePath) {
-    var json = frontMatter.loadFront(filePath, 'markdown')
-    json.path = path.dirname(filePath)
-    json.markdown = json.markdown.replace(/^\n*/, '')
-    return json
+    var meta = frontMatter.loadFront(filePath, 'markdown')
+    meta._path = path.dirname(filePath)
+    meta._markdown = meta.markdown.replace(/^\n*/, '')
+    return {
+      meta: meta
+    }
   })
   .map(function(json) {
-    json.html = remarkable.render(json.markdown)
+    json.html = remarkable.render(json.meta._markdown)
     return json
   })
 
