@@ -12,6 +12,10 @@
   ],
   "author": "Maximilian Hoffmann",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:maxhoffmann/md2json.git"
+  },
   "dependencies": {
     "globby": "^1.0.0",
     "remarkable": "^1.4.2",
