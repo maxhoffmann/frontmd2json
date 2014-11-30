@@ -1,5 +1,5 @@
 {
-  "name": "md2json",
+  "name": "frontmd2json",
   "version": "0.0.1",
   "description": "convert markdown files with frontmatter to json",
   "main": "index.js",
@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:maxhoffmann/md2json.git"
+    "url": "git@github.com:maxhoffmann/frontmd2json.git"
   },
   "dependencies": {
     "globby": "^1.0.0",
