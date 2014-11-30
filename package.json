@@ -1,9 +1,11 @@
 {
   "name": "frontmd2json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "convert markdown files with frontmatter to json",
   "main": "index.js",
-  "bin": ".bin",
+  "bin": {
+    "ocss": "./.bin/frontmd2json"
+  },
   "keywords": [
     "markdown",
     "json",
