@@ -12,8 +12,12 @@
     "frontmatter",
     "yaml"
   ],
-  "author": "Maximilian Hoffmann",
+  "author": "Maximilian Hoffmann <account@maximilianhoffmann.com> (http://maximilianhoffmann.com/)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxhoffmann/frontmd2json/issues"
+  },
+  "homepage": "https://github.com/maxhoffmann/frontmd2json",
   "repository": {
     "type": "git",
     "url": "git@github.com:maxhoffmann/frontmd2json.git"
