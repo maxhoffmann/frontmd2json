@@ -11,9 +11,9 @@ var remarkable = new Remarkable({
 module.exports = function markdowntojson(patterns) {
   var paths = globby.sync(patterns)
   var articles = paths.map(function(filePath) {
-    var meta = frontMatter.loadFront(filePath, 'markdown')
+    var meta = frontMatter.loadFront(filePath, '_markdown')
     meta._path = path.dirname(filePath)
-    meta._markdown = meta.markdown.replace(/^\n*/, '')
+    meta._markdown = meta._markdown.replace(/^\n*/, '')
     return {
       meta: meta
     }
