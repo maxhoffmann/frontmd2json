@@ -1,6 +1,6 @@
 {
   "name": "frontmd2json",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "convert markdown files with frontmatter to json",
   "main": "index.js",
   "bin": {
