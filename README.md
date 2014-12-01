@@ -46,7 +46,7 @@ __Output__
     "meta": {
       "date": "2014-11-02T00:00:00.000Z",
       "_markdown": "# Headline\nParagraph",
-      "_path": "path/to/markdown.md"
+      "_path": "path/to/file/"
     },
     "html": "<h1>Headline</h1><p>Paragraph</p>"
   }
